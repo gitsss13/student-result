@@ -5,8 +5,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/student-result.git'
+                git branch: 'main',  url: 'https://github.com/gitsss13/student-result.git'
             }
         }
 
