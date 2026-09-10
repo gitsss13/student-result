@@ -5,14 +5,13 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/gitsss13/python-sum.git'
+                git 'https://github.com/gitsss13/python-calculator.git'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'C:\\Users\\hassi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe sum.py'
+                bat 'python calculator.py'
             }
         }
     }
