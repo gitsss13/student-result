@@ -5,13 +5,14 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url:'https://github.com/gitsss13/python-calculator.git'
+                git branch: 'main',
+                    url: 'https://github.com/YOUR_USERNAME/student-result.git'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'C:\\Users\\hassi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe calculator.py'
+                bat 'C:\\Users\\hassi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe student_result.py'
             }
         }
     }
