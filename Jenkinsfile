@@ -5,13 +5,14 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch:'main', url: 'https://github.com/gitsss13/student-result.git'
+                git branch: 'main',
+                    url: 'https://github.com/gitsss13/student-result.git'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'python student_result.py'
+                bat 'C:\\Users\\hassi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe student_result.py'
             }
         }
     }
