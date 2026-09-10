@@ -11,8 +11,8 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'C:\\Users\\hassi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe student-result.py'
+        bat 'C:\\Users\\hassi\\AppData\\Local\\Programs\\Python\\Python313\\python.exe student-result.py'
             }
-        }
+        }   
     }
 }
